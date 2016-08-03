@@ -1,2 +1,15 @@
+defaults: &defaults
+  blacklight_catalog_url: 'http://demo.projectblacklight.org'
 
-blacklight_catalog_url: http://demo.projectblacklight.org
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
